@@ -20,6 +20,9 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add -A .
-          if git commit -m "generated"; then
-            git push origin ${{ github.ref }}
+          if git diff --cached --exit-code; then
+           echo "No changes to commit"
+          else
+           git commit -m "Generated"
+           git push https://<YOUR_GITHUB_USERNAME>:${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}@github.com/iamsurajthakur/iamsurajthakur.git refs/heads/main
           fi
