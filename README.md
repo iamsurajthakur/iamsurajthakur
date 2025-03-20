@@ -2,7 +2,7 @@
 
 My name is Suraj, and I'm a computer science student currently interested in Software Engineering and AI!
 
-- 🔭 I’m currently working on my personal skills!
-- 🌱 I’m currently learning Full Stack Development and Data Structure & Algorithm.
-- 👯 I’m looking to collaborate on projects
+- 🔭 I’m currently improving my personal skills!
+- 🌱 Learning Full Stack Development and Data Structure & Algorithm.
+- 👯 Looking to collaborate on anything related to my feild
 
