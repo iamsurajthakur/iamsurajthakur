@@ -15,11 +15,18 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
           USERNAME: ${{ github.actor }}
+      - name: Debug USERNAME
+        run: echo "USERNAME is ${{ github.actor }}"
+      - name: Check files before commit
+        run: ls -al
       - name: Commit & Push
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add -A .
-          if git commit -m "Generated"; then
-            git push origin main
+          if git diff --cached --exit-code; then
+            echo "No changes to commit"
+          else
+            git commit -m "Generated"
+            git push origin ${{ github.ref }}  # Replace with your branch if necessary
           fi
