@@ -10,4 +10,4 @@ My name is Suraj, and I'm a computer science student studying in Tribhuvan Unive
 I write sometimes. Mostly about tech and Personal experiences at [medium](https://medium.com/@itsmesuraj)
 
 
-[![HamiltonPharmD StackOverflow](https://stackoverflow-badge.onrender.com/api/StackOverflowBadge/14122375)](https://stackoverflow.com/users/29981059/suraj)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
