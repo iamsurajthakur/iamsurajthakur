@@ -9,4 +9,5 @@ My name is Suraj, and I'm a computer science student studying in Tribhuvan Unive
 
 I write sometimes. Mostly about tech and Personal experiences at [medium](https://medium.com/@itsmesuraj)
 
-[![HamiltonPharmD StackOverflow](https://stackoverflow-badge.onrender.com/api/StackOverflowBadge/14122375)](https://stackoverflow.com/users/14122375/hamiltonpharmd)
+
+[![HamiltonPharmD StackOverflow](https://stackoverflow-badge.onrender.com/api/StackOverflowBadge/14122375)](https://stackoverflow.com/users/29981059/suraj)
