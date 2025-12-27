@@ -1,6 +1,6 @@
 ## Hola 👋
 
-My name is Suraj, and I'm a computer science student studying in Tribhuvan University currently interested in Software Engineering and AI!
+My name is Suraj, and I'm a computer science undergrad studying in Tribhuvan University currently interested in Software Engineering and AI!
 
 - 🔭 I’m currently improving my personal skills!
 - 🌱 Learning Full Stack Development and Data Structure & Algorithm.
