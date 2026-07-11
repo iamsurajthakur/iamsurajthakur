@@ -18,7 +18,7 @@
 **Full Stack Developer · Systems · Open Source**
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-surajthakur.info.np-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://surajthakur.info.np)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Suraj%20Thakur-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR_LINKEDIN)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Suraj%20Thakur-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/suraj-thakur7/)
 
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
