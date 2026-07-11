@@ -55,7 +55,7 @@ ROWS = [
     ("sec", "Stack"),
     ("kv", "Frontend", "React, Next.js, TypeScript"),
     ("kv", "Backend", "Node, Go, Python"),
-    ("kv", "Database", "PostgreSQL, MongoDB", "MySQL"),
+    ("kv", "Database", "PostgreSQL, MongoDB, MySQL"),
     ("kv", "Cloud", "AWS, Docker, Linux"),
     ("gap",),
     ("sec", "Highlights"),
