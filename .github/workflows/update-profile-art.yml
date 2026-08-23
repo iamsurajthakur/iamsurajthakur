@@ -5,17 +5,18 @@ name: Update profile art
 
 "on":
   schedule:
-    - cron: "17 6 * * *"   # ~06:17 UTC every day
+    - cron: "17 6 * * *"
   workflow_dispatch: {}
   push:
     branches: [main]
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   heatmap:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
@@ -26,14 +27,8 @@ jobs:
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
 
-      - name: Scrape real contribution data (no auth needed)
+      - name: Scrape real contribution data
         run: python scripts/fetch_contributions.py
 
-      - name: Render contribution graph SVG (boxes)
+      - name: Render contribution graph SVG
         run: python scripts/render_heatmap_svg.py
-
-      - name: Commit updated art
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: refresh contribution graph [skip ci]"
-          file_pattern: "data/contributions.json contrib-heatmap.svg"
