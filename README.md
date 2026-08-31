@@ -31,7 +31,7 @@
 
 <br>
 
-<!-- animated contribution graph, refreshed daily by the workflow -->
-<img src="./contrib-heatmap.svg" width="860" alt="GitHub contribution graph" />
+<!-- animated contribution graph, refreshed daily by the workflow (pulled from the output branch) -->
+<img src="https://raw.githubusercontent.com/iamsurajthakur/iamsurajthakur/output/contrib-heatmap.svg" width="860" alt="GitHub contribution graph" />
 
 </div>
