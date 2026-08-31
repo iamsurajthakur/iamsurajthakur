@@ -2,8 +2,7 @@ name: Update profile art
 
 # Refreshes the contribution graph SVG daily from real data.
 # Runs daily, plus whenever you push to main, plus on-demand.
-
-"on":
+on:
   schedule:
     - cron: "17 6 * * *"
   workflow_dispatch: {}
@@ -11,7 +10,7 @@ name: Update profile art
     branches: [main]
 
 permissions:
-  contents: read
+  contents: write # CHANGED: Must be 'write' so the bot can push the updated SVG
 
 jobs:
   heatmap:
@@ -32,3 +31,21 @@ jobs:
 
       - name: Render contribution graph SVG
         run: python scripts/render_heatmap_svg.py
+
+      - name: Commit and push to 'output' branch
+        run: |
+          # 1. Configure Git to act as the GitHub Actions bot
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # 2. Switch to a new or existing 'output' branch
+          git checkout -B output
+          
+          # 3. Add the generated SVG file(s)
+          # NOTE: If your python script saves the file to a specific folder, 
+          # make sure to point to it here (e.g., git add path/to/heatmap.svg)
+          git add *.svg 
+          
+          # 4. Commit and force-push to the output branch
+          git commit -m "chore: auto-update contribution graph" || exit 0
+          git push -f origin output
